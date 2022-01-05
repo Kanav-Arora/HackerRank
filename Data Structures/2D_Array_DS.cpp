@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-
+#include <vector>
 using namespace std;
 
 string ltrim(const string &);
@@ -13,7 +13,7 @@ vector<string> split(const string &);
  * The function accepts 2D_INTEGER_ARRAY arr as parameter.
  */
 
-int hourglassSum(vector<vector<int>> arr) {
+int hourglassSum(vector< vector<int> > arr) {
     int sum = INT_MIN;
     for(int i=0; i<arr.size()-2; i++)
     {
@@ -31,7 +31,7 @@ int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
 
-    vector<vector<int>> arr(6);
+    vector< vector<int> > arr(6);
 
     for (int i = 0; i < 6; i++) {
         arr[i].resize(6);
